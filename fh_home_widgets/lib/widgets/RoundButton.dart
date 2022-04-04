@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../styles/ButtonStyle.dart';
+import '../style/widget_style.dart';
 
 class RoundButton extends StatelessWidget {
   RoundButton({Key? key}) : super(key: key);

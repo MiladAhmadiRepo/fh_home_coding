@@ -1,3 +1,4 @@
+import 'package:fh_home_widgets/svg/svg_icons.dart';
 import 'package:fh_home_widgets/widgets/RoundButton.dart';
 import 'package:flutter/material.dart';
 
@@ -63,13 +64,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Text(
               '$_counter sdfdsfsdf  asdas',
-              style: TextStyle(
+              style: const TextStyle(
                 fontFamily: "OpenSans",
                 color: Colors.red,
                 fontStyle:FontStyle.italic
               ),
             ),
-            RoundButton()
+            RoundButton(),
+            SizedBox(
+              height: 15,
+              width: 15,
+              child: waterLeakDetectorIcon,
+            )
           ],
         ),
       ),
