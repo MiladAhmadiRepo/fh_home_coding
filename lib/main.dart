@@ -1,5 +1,6 @@
 import 'package:fh_home_widgets/icon/svg_icons.dart';
-import 'package:fh_home_widgets/widgets/RoundButton.dart';
+import 'package:fh_home_widgets/widgets/round_button.dart';
+import 'package:fh_home_widgets/widgets/title_icon.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -61,6 +62,11 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 15,
               width: 15,
               child: waterLeakDetectorIcon,
+            ),
+            TitleIcon(
+              hasCopy: true,
+              text: "board member",
+              icon: waterLeakDetectorIcon,
             )
           ],
         ),
