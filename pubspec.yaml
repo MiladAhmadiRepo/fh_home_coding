@@ -53,20 +53,20 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  fonts:
-    - family: OpenSans
-      fonts:
-        - asset: assets/fonts/OpenSans-Italic.ttf
-          style: italic
-    - family: RubikGlitch
-      fonts:
-        - asset: assets/fonts/RubikGlitch-Regular.ttf
+#  fonts:
+#    - family: OpenSans
+#      fonts:
+#        - asset: fh_home_widgets/assets/fonts/OpenSans-Italic.ttf
+#          style: italic
+#    - family: RubikGlitch
+#      fonts:
+#        - asset: fh_home_widgets/assets/fonts/RubikGlitch-Regular.ttf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  assets:
-    - assets/svg/
+#  assets:
+#    - fh_home_widgets/assets/icon/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -97,3 +97,14 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  #--------------------------------------------------------
+  assets:
+    - packages/fh_home_widgets/assets/svg/
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: packages/fh_home_widgets/assets/fonts/OpenSans-Italic.ttf
+          style: italic
+    - family: RubikGlitch
+      fonts:
+        - asset: packages/fh_home_widgets/assets/fonts/RubikGlitch-Regular.ttf

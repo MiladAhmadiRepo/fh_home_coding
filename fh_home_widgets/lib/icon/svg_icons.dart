@@ -4,18 +4,18 @@ import 'package:flutter_svg/svg.dart';
 import '../color/widget_colors.dart';
 //-----------------------------------------------------------------------------
 
-const String boardMember = 'assets/svg/board_member.svg';
-const String check = 'assets/svg/check.svg';
-const String commonArea = 'assets/svg/common_area.svg';
-const String copy = 'assets/svg/copy.svg';
-const String email = 'assets/svg/email.svg';
-const String exclamation = 'assets/svg/exclamation.svg';
-const String forward = 'assets/svg/forward.svg';
-const String phone = 'assets/svg/phone.svg';
-const String plus = 'assets/svg/plus.svg';
-const String smokeDetector = 'assets/svg/smoke_detector.svg';
-const String up = 'assets/svg/up.svg';
-const String waterLeakDetector = 'assets/svg/water_leak_detector.svg';
+const String boardMember = 'packages/fh_home_widgets/assets/svg/board_member.svg';
+const String check = 'packages/fh_home_widgets/assets/svg/check.svg';
+const String commonArea = 'packages/fh_home_widgets/assets/svg/common_area.svg';
+const String copy = 'packages/fh_home_widgets/assets/svg/copy.svg';
+const String email = 'packages/fh_home_widgets/assets/svg/email.svg';
+const String exclamation = 'packages/fh_home_widgets/assets/svg/exclamation.svg';
+const String forward = 'packages/fh_home_widgets/assets/svg/forward.svg';
+const String phone = 'packages/fh_home_widgets/assets/svg/phone.svg';
+const String plus = 'packages/fh_home_widgets/assets/svg/plus.svg';
+const String smokeDetector = 'packages/fh_home_widgets/assets/svg/smoke_detector.svg';
+const String up = 'packages/fh_home_widgets/assets/svg/up.svg';
+const String waterLeakDetector = 'packages/fh_home_widgets/assets/svg/water_leak_detector.svg';
 
 //-----------------------------------------------------------------------------
 
