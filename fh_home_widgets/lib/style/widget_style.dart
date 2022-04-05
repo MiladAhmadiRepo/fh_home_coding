@@ -2,16 +2,38 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../color/widget_colors.dart';
 
-TextStyle roundButtonTextStyle(bool darkOrLight) =>
-    TextStyle(fontSize: 15,
-      color: darkOrLight ? blackButtonTextColor : semiBlackColor,
-      fontFamily: "OpenSans",
-      package: "fh_home_widgets",
-    );
+TextStyle roundButtonTextStyle = TextStyle(
+  fontSize: 16,
+  color: semiBlack,
+  fontFamily: "OpenSans",
+  package: "fh_home_widgets",
+);
+TextStyle roundButtonDarkTextStyle = TextStyle(
+  fontSize: 16,
+  color: semiWhite,
+  fontFamily: "OpenSans",
+  package: "fh_home_widgets",
+);
+TextStyle rowItemTextStyle = TextStyle(
+  fontSize: 18,
+  color: semiBlack,
+  fontFamily: "OpenSans",
+  package: "fh_home_widgets",
+);
+//----------------------------------------------------------------------------
 
-ButtonStyle fillRoundButtonButtonStyle({required bool darkOrLight}) =>
-    ElevatedButton.styleFrom(
-        textStyle: roundButtonTextStyle(darkOrLight),
-        primary: darkOrLight ? semiBlackColor : whiteColor,
-        shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0),)
-    );
+ButtonStyle roundButtonShape = ElevatedButton.styleFrom(
+    primary: white,
+    side: BorderSide(
+      width: 2.0,
+      color: semiBlack,
+    ),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(30.0),
+    ));
+
+ButtonStyle roundButtonDarkShape = ElevatedButton.styleFrom(
+    primary: semiBlack,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(30.0),
+    ));

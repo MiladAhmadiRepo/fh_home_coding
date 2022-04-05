@@ -19,72 +19,72 @@ const String boardMember = 'assets/svg/board_member.svg';
 //-----------------------------------------------------------------------------
 final Widget boardMemberIcon = SvgPicture.asset(
     boardMember,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 );
 final Widget checkIcon = SvgPicture.asset(
     check,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
 final Widget commonAreaIcon = SvgPicture.asset(
     commonArea,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
-final Widget copyIcon = SvgPicture.asset(
+final Widget copyShape = SvgPicture.asset(
     copy,
-    color: copyIconColor,
+    color: copyIcon,
     package: "fh_home_widgets",
 
 );
 final Widget emailIcon = SvgPicture.asset(
     email,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
 final Widget exclamationIcon = SvgPicture.asset(
     exclamation,
-    color: warningTextColor,
+    color: warningText,
     package: "fh_home_widgets",
 
 );
 final Widget forwardIcon = SvgPicture.asset(
     forward,
-    color: blackButtonTextColor,
+    color: semiWhite,
     package: "fh_home_widgets",
 
 );
 final Widget phoneIcon = SvgPicture.asset(
     phone,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
 final Widget plusIcon = SvgPicture.asset(
     plus,
-    color: blackButtonTextColor,
+    color: semiWhite,
     package: "fh_home_widgets",
 
 );
 final Widget smokeDetectorIcon = SvgPicture.asset(
     smokeDetector,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
 final Widget upIcon = SvgPicture.asset(
     up,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );
 final Widget waterLeakDetectorIcon = SvgPicture.asset(
     waterLeakDetector,
-    color: semiBlackColor,
+    color: semiBlack,
     package: "fh_home_widgets",
 
 );

@@ -1,6 +1,9 @@
 import 'package:fh_home_widgets/icon/svg_icons.dart';
 import 'package:fh_home_widgets/widgets/round_button.dart';
-import 'package:fh_home_widgets/widgets/title_icon.dart';
+import 'package:fh_home_widgets/widgets/round_dark_button.dart';
+import 'package:fh_home_widgets/widgets/round_dark_button_with_plus.dart';
+import 'package:fh_home_widgets/widgets/round_dark_button_with_forward.dart';
+import 'package:fh_home_widgets/widgets/row_item.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,14 +37,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -50,14 +51,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-
             Text(
               '$_counter sdfdsfsdf  asdas',
               style: const TextStyle(
                 color: Colors.red,
               ),
             ),
-            const RoundButton(hasForward: true,hasPlus: true,text: "more"),
+            RoundButton(text: "more"),
+            RoundDarkButton(text: "more"),
+            RoundDarkButtonWithPlus(text: "More"),
+            RoundDarkButtonWithForward(text: "More"),
             SizedBox(
               height: 15,
               width: 15,
