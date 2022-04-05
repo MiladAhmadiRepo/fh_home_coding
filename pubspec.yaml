@@ -98,13 +98,13 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   #--------------------------------------------------------
-  assets:
-    - packages/fh_home_widgets/assets/svg/
-  fonts:
-    - family: OpenSans
-      fonts:
-        - asset: packages/fh_home_widgets/assets/fonts/OpenSans-Italic.ttf
-          style: italic
-    - family: RubikGlitch
-      fonts:
-        - asset: packages/fh_home_widgets/assets/fonts/RubikGlitch-Regular.ttf
+#  assets:
+#    - packages/fh_home_widgets/assets/svg/
+#  fonts:
+#    - family: OpenSans
+#      fonts:
+#        - asset: packages/fh_home_widgets/assets/fonts/OpenSans-Italic.ttf
+#          style: italic
+#    - family: RubikGlitch
+#      fonts:
+#        - asset: packages/fh_home_widgets/assets/fonts/RubikGlitch-Regular.ttf

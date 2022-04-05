@@ -54,10 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter sdfdsfsdf  asdas',
               style: const TextStyle(
                 color: Colors.red,
-                fontFamily: "RubikGlitch"
               ),
             ),
-            RoundButton(),
+            const RoundButton(hasForward: true,hasPlus: true,text: "more"),
             SizedBox(
               height: 15,
               width: 15,
