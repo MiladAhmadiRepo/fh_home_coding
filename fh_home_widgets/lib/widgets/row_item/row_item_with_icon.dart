@@ -12,8 +12,8 @@ class RowItemWithIcon extends RowItem {
       0,
       SizedBox(
         child: icon,
-        width: rowItemIconSize,
-        height: rowItemIconSize,
+        width: regularSize["rowItemIconSize"],
+        height: regularSize["rowItemIconSize"],
       ),
     );
     items.insert(

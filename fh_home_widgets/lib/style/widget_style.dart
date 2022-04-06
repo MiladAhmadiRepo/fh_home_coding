@@ -4,33 +4,35 @@ import '../color/widget_colors.dart';
 import '../const/constants.dart';
 
 TextStyle roundButtonTextStyle = TextStyle(
-  fontSize: textFontSize,
+  fontSize: regularSize["buttonFontSize"],
   color: semiBlack,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
+  fontWeight: FontWeight.w700,
 );
 TextStyle roundButtonDarkTextStyle = TextStyle(
-  fontSize: textFontSize,
+  fontSize: regularSize["buttonFontSize"],
   color: semiWhite,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
+  fontWeight: FontWeight.w700,
 );
 TextStyle rowItemTextStyle = TextStyle(
-  fontSize: textFontSize,
+  fontSize: regularSize["textFontSize"],
   color: semiBlack,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 
 TextStyle rowItemWarningTextStyle = TextStyle(
-  fontSize: textFontSize,
+  fontSize: regularSize["textFontSize"],
   color: warningText,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 
 TextStyle rowItemBoldTextStyle = TextStyle(
-  fontSize: textFontSize,
+  fontSize: regularSize["textFontSize"],
   color: semiBlack,
   fontFamily: "OpenSansBold",
   package: "fh_home_widgets",

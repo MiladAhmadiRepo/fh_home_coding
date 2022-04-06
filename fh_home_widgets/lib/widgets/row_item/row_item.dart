@@ -23,7 +23,7 @@ class RowItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: rowItemWidth,
+      width: regularSize["rowItemWidth"],
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: items,

@@ -78,7 +78,7 @@ class RowWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            width: rowItemWidth,
+            width: regularSize["rowItemWidth"],
             child: RowItemBoldText(text: key),
           ),
           value,

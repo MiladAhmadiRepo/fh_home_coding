@@ -17,8 +17,8 @@ class RowItemWithCopy extends RowItem {
       2,
       SizedBox(
         child: copyShape,
-        width: rowItemIconSize,
-        height: rowItemIconSize,
+        width: regularSize["rowItemIconSize"],
+        height: regularSize["rowItemIconSize"],
       ),
     );
   }

@@ -12,8 +12,8 @@ class RowItemWithIconAndCopy extends RowItem {
     items.insert(0,
       SizedBox(
         child: icon,
-        width: rowItemIconSize,
-        height: rowItemIconSize,
+        width: regularSize["rowItemIconSize"],
+        height: regularSize["rowItemIconSize"],
       ),
     );
     items.insert(
@@ -26,8 +26,8 @@ class RowItemWithIconAndCopy extends RowItem {
       3,
       SizedBox(
         child: copyShape,
-        width: rowItemIconSize,
-        height: rowItemIconSize,
+        width: regularSize["rowItemIconSize"],
+        height: regularSize["rowItemIconSize"],
       ),
     );
   }

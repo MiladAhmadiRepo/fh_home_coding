@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 //-----------------------------------------------------------------------------
 const String check = 'assets/svg/check.svg';
@@ -14,7 +13,31 @@ const String plus = 'assets/svg/plus.svg';
 const String waterLeakDetector = 'assets/svg/water_leak_detector.svg';
 const String boardMember = 'assets/svg/board_member.svg';
 //-----------------------------------------------------------------------------
-const double rowItemWidth = 180;
-const double rowItemIconSize = 15;
-const double entityIconSize = 23;
-const double textFontSize = 13;
+//  double rowItemWidth = 180;
+//  double rowItemIconSize = 15;
+//  double entityIconSize = 23;
+//  double textFontSize = 13;
+//  double buttonFontSize = 11;
+Map <String,double> regularSize={
+ 'rowItemWidth': 0,
+ 'rowItemIconSize': 0,
+ 'entityIconSize': 0,
+ 'textFontSize': 0,
+ 'buttonFontSize': 0,
+};
+//-----------------------------------------------------------------------------
+Map <String,double> webSize={
+'rowItemWidth': 200,
+'rowItemIconSize': 16,
+'entityIconSize': 23,
+'textFontSize': 13,
+'buttonFontSize': 11,
+};
+//-----------------------------------------------------------------------------
+Map <String,double> ipadSize={
+ 'rowItemWidth': 150,
+ 'rowItemIconSize': 12,
+ 'entityIconSize': 19,
+ 'textFontSize': 11,
+ 'buttonFontSize': 9,
+};

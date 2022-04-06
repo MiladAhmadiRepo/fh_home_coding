@@ -24,8 +24,8 @@ class EntityWidget extends StatelessWidget {
       children: [
         SizedBox(
           child: entityIcon,
-          width: entityIconSize,
-          height: entityIconSize,
+          width: regularSize["entityIconSize"],
+          height: regularSize["entityIconSize"],
         ),
         const SizedBox(width: 10),
         entityTitle,
