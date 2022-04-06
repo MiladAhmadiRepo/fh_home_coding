@@ -1,14 +1,16 @@
 import 'package:fh_home_widgets/icon/svg_widgets.dart';
-import 'package:fh_home_widgets/widgets/round_button.dart';
-import 'package:fh_home_widgets/widgets/round_dark_button.dart';
-import 'package:fh_home_widgets/widgets/round_dark_button_with_plus.dart';
-import 'package:fh_home_widgets/widgets/round_dark_button_with_forward.dart';
-import 'package:fh_home_widgets/widgets/row_item.dart';
-import 'package:fh_home_widgets/widgets/row_item_bold_text.dart';
-import 'package:fh_home_widgets/widgets/row_item_with_icon.dart';
-import 'package:fh_home_widgets/widgets/row_item_with_icon_and_copy.dart';
-import 'package:fh_home_widgets/widgets/row_item_with_copy.dart';
-import 'package:fh_home_widgets/widgets/row_item_with_warning_icon.dart';
+import 'package:fh_home_widgets/widgets/buttons/row_button.dart';
+import 'package:fh_home_widgets/widgets/buttons/row_dark_button.dart';
+import 'package:fh_home_widgets/widgets/buttons/row_dark_button_with_forward.dart';
+import 'package:fh_home_widgets/widgets/buttons/row_dark_button_with_plus.dart';
+import 'package:fh_home_widgets/widgets/entity_widget.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item_bold_text.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item_with_icon.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item_with_copy.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item_with_icon_and_copy.dart';
+import 'package:fh_home_widgets/widgets/row_item/row_item_with_warning_icon.dart';
+import 'package:fh_home_widgets/widgets/row_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,56 +40,119 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            RoundButton(text: "more"),
-            RoundDarkButton(text: "more"),
-            RoundDarkButtonWithPlus(text: "More"),
-            RoundDarkButtonWithForward(text: "More"),
-            RowItem(
-              text: "board member",
+        child: EntityWidget(
+          entityIcon: commonAreaIcon,
+          entityTitle: RowItemBoldText(text: "Common area"),
+          entityButtons: [
+            RowDarkButtonWithPlus(text: "CONTACT"),
+            RowDarkButtonWithPlus(text: "ROOM"),
+            RowDarkButtonWithPlus(text: "DEVICE"),
+            RowDarkButtonWithForward(text: "8 NoteS"),
+          ],
+          rowWidgets: [
+            RowWidget(
+              headerSectionOfRow: [
+                RowItemWithIconAndCopy(
+                  text: "Board member",
+                  icon: boardMemberIcon,
+                ),
+                RowItemWithIconAndCopy(
+                  text: "+47 444 44 444",
+                  icon: phoneIcon,
+                ),
+                RowItem(
+                  text: "Priority 1",
+                ),
+                RowItemWithIconAndCopy(
+                  text: "mario@castle.com",
+                  icon: emailIcon,
+                ),
+              ],
+              detailSectionOfRow: {
+                "Updated AT": RowItem(text: "01.01.1970"),
+              },
+              leftButtonsOfRow: [
+                RowDarkButton(text: "Edit"),
+                RowDarkButton(text: "Delete")
+              ],
+              rightButtonsOfRow: [],
             ),
-            RowItemWithIcon(
-              text: "board member",
-              icon: phoneIcon,
+            RowWidget(
+              headerSectionOfRow: [
+                RowItemWithIcon(
+                  text: "Smoke detector",
+                  icon: smokeDetectorIcon,
+                ),
+                RowItemWithWarningIcon(
+                  text: "Offline",
+                ),
+                RowItemWithWarningIcon(
+                  text: "Tampered",
+                ),
+                RowItemWithIcon(
+                  text: "Configured",
+                  icon: checkIcon,
+                ),
+              ],
+              detailSectionOfRow: {
+                "Address": RowItemWithCopy(text: "2_0"),
+                "Device ID": RowItem(text: "1"),
+              },
+              leftButtonsOfRow: [
+                RowDarkButton(text: "Edit"),
+                RowDarkButton(text: "Unpair"),
+                RowDarkButton(text: "Delete"),
+                RowDarkButton(text: "Identify"),
+                RowDarkButton(text: "Ping"),
+                RowDarkButton(text: "Sensitivity"),
+                RowButton(text: "Test Siren"),
+              ],
+              rightButtonsOfRow: [
+                RowDarkButtonWithForward(text: "Timeline"),
+                RowDarkButtonWithForward(text: "8 Notes"),
+              ],
             ),
-            RowItemWithCopy(
-              text: "board member",
+            RowWidget(
+              headerSectionOfRow: [
+                RowItemWithIcon(
+                  text: "Water leak detector",
+                  icon: waterLeakDetectorIcon,
+                ),
+                RowItemWithIcon(
+                  text: "Online",
+                  icon: checkIcon,
+                ),
+                RowItemWithIcon(
+                  text: "Secured",
+                  icon: checkIcon,
+                ),
+                RowItemWithIcon(
+                  text: "Configured",
+                  icon: checkIcon,
+                ),
+              ],
+              detailSectionOfRow: {
+                "Address": RowItemWithCopy(text: "2_0"),
+                "Device ID": RowItem(text: "1"),
+              },
+              leftButtonsOfRow: [
+                RowDarkButton(text: "Edit"),
+                RowDarkButton(text: "Unpair"),
+                RowDarkButton(text: "Identify"),
+                RowDarkButton(text: "Ping"),
+              ],
+              rightButtonsOfRow: [
+                RowDarkButtonWithForward(text: "Timeline"),
+                RowDarkButtonWithForward(text: "8 Notes"),
+              ],
             ),
-            RowItemWithIconAndCopy(
-              text: "board member",
-              icon: smokeDetectorIcon,
-            ),
-            RowItemWithIcon(
-              text: "board member",
-              icon: checkIcon,
-            ),
-            RowItemWithWarningIcon(text: "Offline"),
-            RowItemBoldText(text: "ADDRESS"),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

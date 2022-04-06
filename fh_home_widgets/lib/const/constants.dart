@@ -14,3 +14,7 @@ const String plus = 'assets/svg/plus.svg';
 const String waterLeakDetector = 'assets/svg/water_leak_detector.svg';
 const String boardMember = 'assets/svg/board_member.svg';
 //-----------------------------------------------------------------------------
+const double rowItemWidth = 180;
+const double rowItemIconSize = 15;
+const double entityIconSize = 23;
+const double textFontSize = 13;

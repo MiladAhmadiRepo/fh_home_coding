@@ -1,35 +1,36 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../color/widget_colors.dart';
+import '../const/constants.dart';
 
 TextStyle roundButtonTextStyle = TextStyle(
-  fontSize: 16,
+  fontSize: textFontSize,
   color: semiBlack,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 TextStyle roundButtonDarkTextStyle = TextStyle(
-  fontSize: 16,
+  fontSize: textFontSize,
   color: semiWhite,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 TextStyle rowItemTextStyle = TextStyle(
-  fontSize: 18,
+  fontSize: textFontSize,
   color: semiBlack,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 
 TextStyle rowItemWarningTextStyle = TextStyle(
-  fontSize: 18,
+  fontSize: textFontSize,
   color: warningText,
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
 
 TextStyle rowItemBoldTextStyle = TextStyle(
-  fontSize: 16,
+  fontSize: textFontSize,
   color: semiBlack,
   fontFamily: "OpenSansBold",
   package: "fh_home_widgets",
