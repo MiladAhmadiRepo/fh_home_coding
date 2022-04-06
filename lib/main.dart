@@ -1,9 +1,14 @@
-import 'package:fh_home_widgets/icon/svg_icons.dart';
+import 'package:fh_home_widgets/icon/svg_widgets.dart';
 import 'package:fh_home_widgets/widgets/round_button.dart';
 import 'package:fh_home_widgets/widgets/round_dark_button.dart';
 import 'package:fh_home_widgets/widgets/round_dark_button_with_plus.dart';
 import 'package:fh_home_widgets/widgets/round_dark_button_with_forward.dart';
 import 'package:fh_home_widgets/widgets/row_item.dart';
+import 'package:fh_home_widgets/widgets/row_item_bold_text.dart';
+import 'package:fh_home_widgets/widgets/row_item_with_icon.dart';
+import 'package:fh_home_widgets/widgets/row_item_with_icon_and_copy.dart';
+import 'package:fh_home_widgets/widgets/row_item_with_copy.dart';
+import 'package:fh_home_widgets/widgets/row_item_with_warning_icon.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -51,26 +56,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              '$_counter sdfdsfsdf  asdas',
-              style: const TextStyle(
-                color: Colors.red,
-              ),
-            ),
             RoundButton(text: "more"),
             RoundDarkButton(text: "more"),
             RoundDarkButtonWithPlus(text: "More"),
             RoundDarkButtonWithForward(text: "More"),
-            SizedBox(
-              height: 15,
-              width: 15,
-              child: waterLeakDetectorIcon,
-            ),
-            TitleIcon(
-              hasCopy: true,
+            RowItem(
               text: "board member",
-              icon: waterLeakDetectorIcon,
-            )
+            ),
+            RowItemWithIcon(
+              text: "board member",
+              icon: phoneIcon,
+            ),
+            RowItemWithCopy(
+              text: "board member",
+            ),
+            RowItemWithIconAndCopy(
+              text: "board member",
+              icon: smokeDetectorIcon,
+            ),
+            RowItemWithIcon(
+              text: "board member",
+              icon: checkIcon,
+            ),
+            RowItemWithWarningIcon(text: "Offline"),
+            RowItemBoldText(text: "ADDRESS"),
           ],
         ),
       ),

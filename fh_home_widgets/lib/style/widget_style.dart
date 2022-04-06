@@ -20,6 +20,21 @@ TextStyle rowItemTextStyle = TextStyle(
   fontFamily: "OpenSans",
   package: "fh_home_widgets",
 );
+
+TextStyle rowItemWarningTextStyle = TextStyle(
+  fontSize: 18,
+  color: warningText,
+  fontFamily: "OpenSans",
+  package: "fh_home_widgets",
+);
+
+TextStyle rowItemBoldTextStyle = TextStyle(
+  fontSize: 16,
+  color: semiBlack,
+  fontFamily: "OpenSansBold",
+  package: "fh_home_widgets",
+  fontWeight: FontWeight.w700,
+);
 //----------------------------------------------------------------------------
 
 ButtonStyle roundButtonShape = ElevatedButton.styleFrom(

@@ -43,9 +43,9 @@ flutter:
     - family: OpenSans
       fonts:
         - asset: assets/fonts/OpenSans-Regular.ttf
-    - family: RubikGlitch
+    - family: OpenSansBold
       fonts:
-        - asset: assets/fonts/RubikGlitch-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -2,7 +2,7 @@ import 'package:fh_home_widgets/widgets/round_button.dart';
 import 'package:fh_home_widgets/widgets/round_dark_button.dart';
 import 'package:flutter/material.dart';
 import '../color/widget_colors.dart';
-import '../icon/svg_icons.dart';
+import '../icon/svg_widgets.dart';
 import '../style/widget_style.dart';
 
 class RoundDarkButtonWithForward extends RoundDarkButton {

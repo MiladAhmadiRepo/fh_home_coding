@@ -3,16 +3,16 @@ import '../color/widget_colors.dart';
 import '../icon/svg_widgets.dart';
 import '../style/widget_style.dart';
 
-class RowItem extends StatelessWidget {
+class RowItemBoldText extends StatelessWidget {
   List<Widget> items = [];
   final String text;
-  RowItem({Key? key,
+  RowItemBoldText({Key? key,
     required this.text,
   }) : super(key: key){
     items = [
       Text(
         text,
-        style: rowItemTextStyle,
+        style: rowItemBoldTextStyle,
       ),
     ];
   }
